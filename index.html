@@ -122,7 +122,9 @@
         };
 
     // 閉嘴函數 - 當釋放時執行
-    const closeMouth = () => setTimeout(() => cat.id = "p", 25);
+    const closeMouth = function() {
+        cat.id = "p";
+    };
 
     // 事件監聽器
     document.addEventListener("pointerup", closeMouth);
